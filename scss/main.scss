@@ -1,0 +1,18 @@
+//IMPORT BOOTSTRAP 5
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//IMPORT COMPONENTS
+@import "components/variables";
+@import "components/utilities";
+@import "components/typography";
+@import "components/layout";
+
+
+//IMPORT SECTIONS
+@import "sections/navbar";
+@import "sections/header";
+@import "sections/about";
+@import "sections/menus";
+@import "sections/social_media";
+@import "sections/contact";
+@import "sections/footer";

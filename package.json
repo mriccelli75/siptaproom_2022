@@ -1,0 +1,26 @@
+{
+  "name": "siptaproom_2022",
+  "version": "1.0.0",
+  "description": "Sip Taproom Website Dependencies",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mriccelli75/siptaproom_2022.git"
+  },
+  "author": "Michael Riccelli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mriccelli75/siptaproom_2022/issues"
+  },
+  "homepage": "https://github.com/mriccelli75/siptaproom_2022#readme",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3"
+  }
+}
