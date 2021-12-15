@@ -11118,5 +11118,46 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.headerHolder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 16px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu-nav {
+  margin: 0;
+  font-size: 0;
+  text-align: center;
+}
+
+.menu-nav li:first-child {
+  margin-left: 0;
+}
+
+.menu-nav li {
+  display: inline-block;
+  position: relative;
+  margin-left: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.nav-button-holder {
+  display: none;
+}
+
+.nav-holder-1 {
+  text-align: center;
+}
 
 /*# sourceMappingURL=main.css.map */
