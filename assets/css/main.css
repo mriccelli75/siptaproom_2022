@@ -11151,6 +11151,11 @@ textarea.form-control-lg {
 .headerHolder .logo-1 {
   flex: 1 1 0;
 }
+.headerHolder .logo img {
+  width: 85px;
+  height: auto;
+  padding-top: 0.5rem;
+}
 
 .menu-nav {
   margin: 0;
@@ -11178,10 +11183,59 @@ textarea.form-control-lg {
   color: #EDB313;
 }
 
+@media (max-width: 1024px) {
+  .nav-holder {
+    display: none;
+  }
+
+  .headerHolder .logo-1 {
+    flex: 5 1 0;
+  }
+
+  .logo {
+    text-align: center;
+  }
+}
 .nav-button-holder {
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .nav-button-holder {
+    display: block;
+    flex: 1 1 0;
+  }
+  .nav-button-holder .nav-button {
+    background: 0 0;
+    border: none;
+    padding-bottom: 15px;
+    vertical-align: middle;
+  }
+  .nav-button-holder .nav-button .icon-bar {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: black;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .nav-button-holder .nav-button .icon-bar:after,
+.nav-button-holder .nav-button .icon-bar:before {
+    background: #000;
+    content: "";
+    height: 100%;
+    left: 4px;
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+  }
+  .nav-button-holder .nav-button .icon-bar:after {
+    bottom: -12px;
+    left: 8px;
+    top: auto;
+  }
+}
 .nav-holder-1 {
   text-align: center;
 }
