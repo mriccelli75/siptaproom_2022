@@ -11126,6 +11126,10 @@ textarea.form-control-lg {
   font-family: 'PT Serif', serif;
   font-family: 'Roboto', sans-serif;
 */
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+}
+
 .headerHolder {
   display: flex;
   align-items: center;
@@ -11150,11 +11154,25 @@ textarea.form-control-lg {
 }
 .headerHolder .logo-1 {
   flex: 1 1 0;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.headerHolder .logo-1 .brand {
+  color: #EDB313;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.65rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transition: all 0.5s;
+  text-decoration: none;
 }
 .headerHolder .logo img {
   width: 85px;
   height: auto;
-  padding-top: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .menu-nav {
@@ -11264,6 +11282,58 @@ textarea.form-control-lg {
 }
 .social-btn-top1 .social-media li a:hover {
   color: #EDB313;
+}
+
+#hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../assets/images/beers_with_hops.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero-section .hero-text {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+#hero-section .hero-text h1, #hero-section .hero-text h2 {
+  color: white;
+}
+#hero-section .hero-text h1 {
+  font-size: 4.1rem;
+  text-transform: uppercase;
+}
+#hero-section .hero-text svg.bi.bi-chevron-down {
+  position: absolute;
+  top: 100px;
+  animation: updown 2s ease infinite;
+}
+#hero-section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-30%);
+  }
+  50% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(-30%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
