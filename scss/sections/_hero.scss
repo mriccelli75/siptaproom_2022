@@ -1,0 +1,61 @@
+@use "../components/variables" as *;
+
+#hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/images/beers_with_hops.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .hero-text {
+        position: relative;
+        text-align: center;
+        z-index: 2;
+        h1, h2 {
+            color: white;
+        }
+        h1 {
+            font-size: 4.1rem;
+            text-transform: uppercase;
+        }
+        svg.bi.bi-chevron-down {
+            position: absolute;
+            top: 100px;
+            animation: updown 2s ease infinite;
+
+        }
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        // background-image: linear-gradient(120deg, #000, $primary-orange);
+        opacity: 0.5;
+        z-index: 1;
+       
+    }
+
+}
+
+
+@keyframes updown {
+    0% {
+      transform: translateY(-30%);
+    }
+  
+    50% {
+      transform: translateY(30%);
+    }
+  
+    100% {
+      transform: translateY(-30%);
+    }
+  }
