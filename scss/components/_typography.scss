@@ -1,4 +1,7 @@
+@use "variables" as *;
+
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Roboto:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
 
 /* FONT FAMILY USAGE:   
   font-family: 'PT Serif', serif;
@@ -6,5 +9,11 @@
 */
 h1,h2,h3 {
   font-family: 'Roboto', sans-serif;
+
+}
+
+p {
+  font-family: 'PT Serif', serif;
+  color: $body-text-gray;
 
 }

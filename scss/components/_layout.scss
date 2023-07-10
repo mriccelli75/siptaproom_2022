@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+.btn-primary {
+    color: #fff;
+    background-color: $primary-orange;
+    border-color: $primary-orange;
+    font-family: $heading-font;
+
+    &:hover {
+        background-color: $secondary-orange;
+        border-color: $secondary-orange;
+    }
+}
